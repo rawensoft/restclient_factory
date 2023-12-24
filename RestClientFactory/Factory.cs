@@ -19,6 +19,12 @@ public static class Factory
 	 * Иначе HttpClient будет сохранять все куки у себя, а так RestSharp сам ими управляет
 	 */
 
+	/// <summary>
+	/// Находит RestClient по прокси
+	/// </summary>
+	/// <param name="proxy">Прокси, через который будут проходить запросы</param>
+	/// <param name="uri">Url запроса, нужно только для получения url прокси <see cref="IWebProxy.GetProxy(Uri)"/></param>
+	/// <returns>RestClient для работы с запросами</returns>
 	public static RestClient GetClient(IWebProxy? proxy, Uri uri)
 	{
 		var hash = proxy?.GetProxy(uri)?.GetHashCode() ?? -1;
