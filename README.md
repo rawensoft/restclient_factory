@@ -1,6 +1,6 @@
 # RestClient Factory
 
-Эта библиотека должна помочь в получении нужного RestClient по прокси. Сделана она [по рекомендациям Microsoft](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use) Примеры когда она будет нужна:
+Эта библиотека должна помочь в получении нужного RestClient по прокси. Сделана она [по рекомендациям Microsoft](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use). Случая когда она может пригодиться:
 - Нужно связать библиотека A, B и C
 - Нужно связать библиотеку SteamWeb со своей библиотекой
 - Использование одного пуля соединения с прокси для доступа к сайтам
@@ -38,3 +38,4 @@ public static RestResponse Download(string url, IWebProxy? proxy, CookieContaine
 Для работы нужны:
 - [RestSharp 110.2.0](https://www.nuget.org/packages/RestSharp/110.2.0) - для обработки запросов
 - [System.Collections.Concurrent 4.3.0](https://www.nuget.org/packages/System.Collections.Concurrent/4.3.0) - для потокобезопасной работы со списком всех `RestClient`
+- .NET 7
