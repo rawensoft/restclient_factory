@@ -1,8 +1,7 @@
 # RestClient Factory
 
 Эта библиотека должна помочь в получении нужного RestClient по прокси. Сделана она [по рекомендациям Microsoft](https://learn.microsoft.com/en-us/dotnet/fundamentals/networking/http/httpclient-guidelines#recommended-use). Случая когда она может пригодиться:
-- Нужно связать библиотека A, B и C
-- Нужно связать библиотеку SteamWeb со своей библиотекой
+- Нужно связать библиотека несколько библиотек в одну
 - Использование одного пуля соединения с прокси для доступа к сайтам
 
 ## Почему `RestClient`, а не `HttpClient`?
