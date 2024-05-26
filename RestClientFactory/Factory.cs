@@ -27,7 +27,7 @@ public static class Factory
 	/// <returns>RestClient для работы с запросами</returns>
 	public static RestClient GetClient(IWebProxy? proxy, Uri uri)
 	{
-		var hash = proxy?.GetProxy(uri)?.GetHashCode() ?? -1;
+		var hash = proxy?.GetProxy(uri)?.GetHashCode() ?? uri.GetHashCode();
 		RestClient? client = null;
 		_clients!.AddOrUpdate(hash, (key) =>
 		{
