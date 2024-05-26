@@ -7,6 +7,9 @@
     <Company>RAWENSOFT</Company>
     <Product>RestClient Factory</Product>
     <Description>Пакет нужен для объединения нескольких RestClient в один. Это будет нужно, если в проекте используется более одного клиента для соединения, например нужно использовать один прокси для доступа к 5 сайтам, если нужно использовать для доступа к одному сайту, то этот пакет будет излишним для этого.</Description>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
